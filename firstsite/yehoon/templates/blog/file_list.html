@@ -1,0 +1,8 @@
+<h1>업로드된 파일</h1>
+<ul>
+    {% for file in files %}
+        <li>{{ file.file.name }} - {{ file.uploaded_at }}</li>
+    {% empty %}
+        <li>아직 업로드된 파일이 없습니다.</li>
+    {% endfor %}
+</ul>
